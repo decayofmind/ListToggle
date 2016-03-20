@@ -1,8 +1,12 @@
 ListToggle
 ==========
 
+It's a fork of [Valloric/ListToggle][], allowing you mapping keys another way.
+
 A simple vim plugin for toggling the display of the quickfix list and the
-location-list. Install it with [Vundle][] or [Pathogen][] (I recommend Vundle).
+location-list. Install it with [vim-plug][] or any other plugin manager.
+
+    Plug 'decayofmind/ListToggle'
 
 You can set the key mappings for toggling Vim's `locationlist` and `quickfix`
 windows in your vimrc file:
@@ -16,6 +20,6 @@ Here's how you can set the height (in number of lines) of the spawned window:
 
     let g:lt_height = 10
 
-[vundle]: https://github.com/gmarik/vundle#about
-[pathogen]: https://github.com/tpope/vim-pathogen#pathogenvim
+[Valloric/ListToggle]: https://github.com/Valloric/ListToggle
+[vim-plug]: https://github.com/junegunn/vim-plug
 
