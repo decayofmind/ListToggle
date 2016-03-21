@@ -46,6 +46,9 @@ endif
 
 function! s:LListToggle()
     let buffer_count_before = s:BufferCount()
+    " Location list can't be closed if there's cursor in it, so we need 
+    " to call lclose twice to move cursor to the main pane
+    silent! lclose
     silent! lclose
 
     if s:BufferCount() == buffer_count_before
